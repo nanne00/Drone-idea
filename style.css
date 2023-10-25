@@ -1,0 +1,122 @@
+body {
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(255, 0, 106);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#chat {
+  width: 400px;
+  max-height: 300px;
+  border: 1px solid #ff0062;
+  padding: 10px;
+  background-color: #1e1e1e;
+  overflow-y: auto;
+  border-radius: 8px; /* Adicionar cantos arredondados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adicionar sombra */
+}
+
+.myInput {
+  margin-bottom: 20px;
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid #000000;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+.output {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.user-message {
+  color: #00bfff;
+  font-style: italic;
+}
+
+.echko-message {
+  color: #3bee4a;
+  font-weight: bold;
+}
+
+.echko-operation {
+  color: rgb(255, 0, 106);
+  font-weight: bold;
+}
+
+.echko-error {
+  color: red;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+.button:hover {
+  background-color: #444444;
+}
+
+/* Estilizar o botão de envio */
+#submitButton {
+  background-color: rgb(255, 0, 106);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+#submitButton:hover {
+  background-color: #ff006a;
+}
+h2 {
+  color: #ff00ff; /* Altere a cor para a cor desejada */
+  font-size: 12px; /* Opcional: ajuste o tamanho da fonte */
+}
+.typing-animation {
+  animation: typing 2s steps(40, end);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #00bfff;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+#imagemRally {
+  max-width: 50%; /* Ajusta o tamanho máximo da imagem ao chat */
+  height: auto;    /* Mantém a proporção da imagem */
+  display: none;   /* Inicialmente, a imagem fica oculta */
+  margin: 0 auto;  /* Centraliza horizontalmente no chat */
+}
+
+.imagem-chat {
+  max-width: 100%; /* Define a largura máxima da imagem como 100% do contêiner */
+  height: auto;    /* Mantém a proporção da imagem */
+}
