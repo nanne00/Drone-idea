@@ -60,14 +60,6 @@ function exibirMensagemAjuda() {
 }
 
 
-
-// Decedi que futuramente calcularExpressao irá seu bom pro meu drone calcular altura e consolar na tela exatamente como pedi.
-// calcular também distancia entre o Drone e o objeto
-// calcular distancia do drone em relação ao objeto e em relação ao chão
-
-// ainda tem muita coisa que devo fazer.
-
-
 function calcularExpressao(expressao) {
   var resultado;
   try {
